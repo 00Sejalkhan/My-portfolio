@@ -13,9 +13,25 @@ html, body {
   width:100%;
   overflow-x: hidden;
   margin: 0;
-  padding: 0;
+  padding: 0 15px;
 }
 
+.container, section{
+  width: 90px;
+  padding: 80px 15px 0 15px;
+}
+
+@media (max-width:768px) {
+  nav, .navbar{
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+}
+
+nav a, .navbar a {
+  font-size: 14px;
+}
 
 nav, .navbar {
   display: flex;
